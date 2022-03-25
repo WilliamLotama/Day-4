@@ -1,0 +1,125 @@
+
+body {
+    margin: 0;
+}
+
+
+nav {
+    background-color: rgb(225, 233, 233);
+    display: flex;
+    height: 7vh;
+}
+
+nav .nav-left {
+    /* background-color: blueviolet; */
+    display: flex;
+    padding-left: 100px;
+    flex: 50%;
+    align-items: center;
+}
+
+
+nav .nav-left li {
+    display: inline;
+}
+
+nav .nav-left ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+}
+
+
+nav .nav-right {
+    /* background-color: brown; */
+    display: flex;
+    justify-content: flex-end; /* horizontal */
+    align-items: center; /* vertical */
+    flex: 50%;
+    padding-right: 100px;
+}
+
+nav .nav-right a {
+    background-color: orangered;
+    color: white;
+    padding: 8px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container {
+    background-color: white;
+    height: 93vh;
+    display: flex;
+    margin: 70px;
+    /* padding: 50px; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.container section {
+    /* background-color: cadetblue; */
+    display: flex;
+    width: 85%;
+}
+
+section .section-left {
+    flex: 90%;
+    padding-right: 50px;
+}
+
+section .section-right {
+    /* background-color: rgb(99, 97, 106); */
+    flex: 40%;
+    padding-left: 100px;
+}
+
+section .section-right p {
+    color: grey;
+}
+
+section .social-media
+{
+    padding-top: 60px;
+}
+ section .contact
+ {
+     padding-top: 50px;
+ }
+
+.myProject 
+{
+    margin-top: 15px;
+}
+ .input-file
+ {
+     width: 100%;
+     margin-top : 10px;
+     background-color: gray;
+     border-radius: 3px;
+
+     /* border: 1px solid black; */
+ }
+ .input-file label
+ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 35px;
+     
+ }
+ .input-file p
+ {
+     width: 20%;
+     height: 20%;
+     display: flex;
+     
+     justify-content: center;
+     align-items: center;
+     font-weight: normal;
+     border-radius: 3px;
+ }
+ .input-file i{
+     width: 20%;
+ }
