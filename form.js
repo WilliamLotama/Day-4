@@ -7,11 +7,21 @@ function submitData()
     let subject = document.getElementById('input-subject').value
     let message = document.getElementById('input-message').value
     
-    console.log(nama);
-    console.log(email);
-    console.log(phone);
-    console.log(subject);
-    console.log(message)
+    let dataObject = 
+    {
+        nama:nama,
+        email:email,
+        phone:phone,
+        subject:subject,
+        message:message
+
+    }
+   
+    // console.log(nama);
+    // console.log(email);
+    // console.log(phone);
+    // console.log(subject);
+    // console.log(message)
 
 
     if (nama == '' ) {
@@ -32,15 +42,7 @@ function submitData()
     a.href  = `mailto:${emailReciever}?subject=${subject}&body=Hello My Name ${nama} ${message} please Contact Me For More Info ${phone}`
     a.click()
 
-    let dataObject = 
-    {
-        nama:nama,
-        email:email,
-        phone:phone,
-        subject:subject,
-        message:message
-
-    }
+   
     console.log(dataObject())
 }
 

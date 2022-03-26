@@ -47,6 +47,14 @@ nav .nav-right a {
     text-decoration: none;
 }
 
+ .form-input
+ {
+   
+    width: 400px; 
+    margin: 50px auto;
+ }
+
+
 .container {
     background-color: white;
     height: 93vh;
@@ -75,29 +83,31 @@ section .section-right {
     padding-left: 100px;
 }
 
-section .section-right p {
+ section .section-right p 
+    {
     color: grey;
-}
+  }
 
-section .social-media
-{
-    padding-top: 60px;
-}
+ section .social-media
+ {
+     padding-top: 60px;
+ }
  section .contact
  {
      padding-top: 50px;
  }
 
-.myProject 
-{
+ .myProject 
+ {
     margin-top: 15px;
-}
+ }
  .input-file
  {
      width: 100%;
      margin-top : 10px;
-     background-color: gray;
+     background-color: rgb(255, 255, 255);
      border-radius: 3px;
+     border-radius: 4px;
 
      /* border: 1px solid black; */
  }
@@ -114,7 +124,6 @@ section .social-media
      width: 20%;
      height: 20%;
      display: flex;
-     
      justify-content: center;
      align-items: center;
      font-weight: normal;
@@ -122,4 +131,75 @@ section .social-media
  }
  .input-file i{
      width: 20%;
+     display: flex;
+     justify-content: flex-end;
+     margin: 10px ;
  }
+
+ .project-section
+ {
+     width: 100%;
+     height: auto;
+     background-color: rgb(248, 245, 245);
+ }
+
+ .project-view
+  {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px auto;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 30px 0px;
+  }
+
+  .project-view
+  {
+      display: flex;
+      justify-content: space-between;
+  }
+
+.project-card{
+    width: 28%;
+    background-color: #fff;
+    box-shadow: 2px 2px 8px #8888884f;
+    border-radius: 5px;
+    padding: 16px;
+    margin: 10px 10px 10px 10px;
+}
+
+.project-card img
+{
+width: 100%;
+/* margin: 100%; */
+padding: auto;
+height: auto;
+border-radius: 5px;
+}
+
+.project-card i
+{
+    font-size: 25px;
+    margin: auto 4px;
+}
+
+.button-card
+{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.button-card button
+{
+    padding: 40px auto ;
+    margin: 10px 3px;
+    background-color: black;
+    color: white;
+    font-weight: normal;
+    /* justify-content: space-between; */
+    width: 100%;
+    
+    border-radius: 5px;
+}
