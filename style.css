@@ -54,6 +54,60 @@ nav .nav-right a {
     margin: 50px auto;
  }
 
+ .form-input input
+ {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 207, 207);
+ }
+
+ .form-input textarea
+ {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(209, 207, 207);
+    height: 100px;
+ }
+
+ .form-input button
+ {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-top: 30px;
+    margin-left: 300px;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+ }
+
+
+ .input-skill
+ {
+    display: flex; 
+    margin: 10px auto;
+ }
+ .input-skill input
+ {
+     margin: 10px auto;
+     width: 20px;
+     
+
+ }
+ .input-skill label
+ {
+     margin: 10px auto;
+     font-size: larger;
+ }
 
 .container {
     background-color: white;
@@ -184,6 +238,19 @@ border-radius: 5px;
     margin: auto 4px;
 }
 
+.project-card p
+{
+    text-align: justify;   
+    
+}
+
+ .durasi
+ {
+     font-size: 10;
+     color: rgb(194, 187, 187);
+
+ }
+
 .button-card
 {
     display: flex;
@@ -203,3 +270,4 @@ border-radius: 5px;
     
     border-radius: 5px;
 }
+

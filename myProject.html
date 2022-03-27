@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Halaman Project</title>
+    <title>ADD Project Page</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -31,105 +31,67 @@
       </div>
     </nav>
 
-    <form class="form-input">
+    <form class="form-input" onsubmit="addProject(event)">
       <div>
         <h2 style="text-align: center">ADD MY PROJECT</h2>
 
-        <label style="font-weight: bold; font-size: 20px" for="input-name"
-          >Name</label
+        <label style="font-weight: bold; font-size: 20px" for="input-tittle">Tittle</label
         >
-        <input
-          style="
-            background-color: rgb(255, 255, 255);
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: 1px solid rgb(209, 207, 207);
-          "
-          type="text"
-          id="input-name"
-        />
+        <input type="text" id="input-tittle"/>
       </div>
 
       <div class="myProject" style="display: flex; gap: 50px">
         <div style="margin-top: 15px">
           <label for="input-email" style="font-weight: bold; font-size: 20px"
-            >Start Date</label
-          >
+            >Start Date</label>
           <input
             type="date"
-            id="input-email"
-            style="
-              background-color: rgb(255, 255, 255);
-              width: 100%;
-              padding: 10px;
-              margin-top: 5px;
-              border-radius: 5px;
-              border: 1px solid rgb(209, 207, 207);
-            "
+            id="input-startDate"
           />
         </div>
 
         <div style="margin-top: 15px">
-          <label for="input-phone" style="font-weight: bold; font-size: 20px"
+          <label for="input-endDate" style="font-weight: bold; font-size: 20px"
             >End Date</label
           >
           <input
             type="date"
-            id="input-phone"
-            style="
-              background-color: rgb(255, 255, 255);
-              width: 100%;
-              padding: 10px;
-              margin-top: 5px;
-              border-radius: 5px;
-              border: 1px solid rgb(209, 207, 207);
-            "
+            id="input-endDate"
           />
         </div>
       </div>
 
       <div class="myProject">
-        <label for="input-message" style="font-weight: bold; font-size: 20px"
+        <label for="input-desc" style="font-weight: bold; font-size: 20px"
           >Description</label
         >
         <textarea
-          id="input-message"
-          style="
-            background-color: rgb(255, 255, 255);
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 5px;
-            border: 1px solid rgb(209, 207, 207);
-            height: 100px;
-          "
+          id="input-desc"
         >
         </textarea>
       </div>
 
       <div class="myProject">
         <label for="input-message" style="font-weight: bold; font-size: 20px"
-          >Technologies</label
-        >
+          >Technologies</label>
         <br />
 
-        <div style="display: flex">
+        <div class="input-skill">
           <!-- div left -->
           <div style="width: 100%">
             <input type="checkbox" id=" " />
-            <label for="vehicle1">NodeJs</label> <br />
+            <label>Java Script</label> <br />
+
             <input type="checkbox" id="    " />
-            <label for="vehicle1">NextJs</label><br />
+            <label >JAVA</label><br />
           </div>
 
           <!-- div right -->
-          <div style="width: 100%">
+          <div style="width: 100%;">
             <input type="checkbox" id="    " />
-            <label for="vehicle1"> React JS</label><br />
+            <label > HTML 5 </label><br />
             <input type="checkbox" id="    " />
-            <label for="vehicle1"> Type Script</label>
+            <label > Android</label>
           </div>
         </div>
       </div>
@@ -147,36 +109,22 @@
         </div>
       </div>
 
-      <button
-        onclick="submitData()"
-        type="reset"
-        style="
-          background-color: rgb(0, 0, 0);
-          color: white;
-          margin-top: 30px;
-          margin-left: 300px;
-          display: flex;
-          justify-content: flex-end;
-          border: none;
-          padding: 8px 30px;
-          border-radius: 5px;
-          font-size: 12px;
-          cursor: pointer;
-        "
-      >
+      <button>       
         Submit
       </button>
     </form>
 
-    <div class="project-section">
+    <!-- Project View Card -->
+    <div class="project-section" id="contents">
       <h1 style="text-align: center">My Project</h1>
       <div class="project-view">
-        
         <div class="project-card">
           <!-- Untuk Image Tittle durasi  -->
           <img src="assets/hotNews.jpg" id="image-card" />
-          <h3 id="tittle-card">Dumways Bootcamp Activity</h3>
-          <p id="durasi-card">Durasi 3 Bulan</p>
+          <a href="viewProject.html" style="text-decoration: none; color: black;">
+            <h3 id="tittle-card">Dumways Bootcamp Activity</h3>
+          </a>
+          <p class="durasi" id="durasi-card">Durasi 3 Bulan</p>
           
           <!-- Untuk Desc -->
           <p id="desc-card">
@@ -189,23 +137,20 @@
           <!-- Icon Code -->
           <i class="fa-brands fa-js"></i>
           <i class="fa-brands fa-html5"></i>
-          <i class="fa-brands fa-js-square"></i>
+          <i class="fa-brands fa-java"></i>
           <i class="fa-brands fa-android"></i>
           
           <div class="button-card">
               <button>Edit</button>
               <button>Delete</button>
-          </div>
-         
-        
-        
+          </div>      
         </div>
 
         <div class="project-card">
             <!-- Untuk Image Tittle durasi  -->
             <img src="assets/hotNews.jpg" id="image-card" />
-            <h3 id="tittle-card">Dumways Bootcamp Activity</h3>
-            <p id="durasi-card">Durasi 3 Bulan</p>
+            <h3 id="tittle-card">Dumbways Bootcamp Activity</h3>
+            <p class="durasi" id="durasi-card">Durasi 3 Bulan</p>
             
             <!-- Untuk Desc -->
             <p id="desc-card">
@@ -218,7 +163,7 @@
             <!-- Icon Code -->
             <i class="fa-brands fa-js"></i>
             <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-js-square"></i>
+            <i class="fa-brands fa-java"></i>
             <i class="fa-brands fa-android"></i>
             
             <div class="button-card">
@@ -233,8 +178,8 @@
           <div class="project-card">
             <!-- Untuk Image Tittle durasi  -->
             <img src="assets/hotNews.jpg" id="image-card" />
-            <h3 id="tittle-card">Dumways Bootcamp Activity</h3>
-            <p id="durasi-card">Durasi 3 Bulan</p>
+            <h3 id="tittle-card">Dumbways Bootcamp Activity</h3>
+            <p class="durasi" id="durasi-card">Durasi 3 Bulan</p>
             
             <!-- Untuk Desc -->
             <p id="desc-card">
@@ -247,7 +192,7 @@
             <!-- Icon Code -->
             <i class="fa-brands fa-js"></i>
             <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-js-square"></i>
+            <i class="fa-brands fa-java"></i>
             <i class="fa-brands fa-android"></i>
             
             <div class="button-card">
@@ -262,8 +207,8 @@
           <div class="project-card">
             <!-- Untuk Image Tittle durasi  -->
             <img src="assets/hotNews.jpg" id="image-card" />
-            <h3 id="tittle-card">Dumways Bootcamp Activity</h3>
-            <p id="durasi-card">Durasi 3 Bulan</p>
+            <h3 id="tittle-card">Dumbways Bootcamp Activity</h3>
+            <p class="durasi" id="durasi-card">Durasi 3 Bulan</p>
             
             <!-- Untuk Desc -->
             <p id="desc-card">
@@ -276,7 +221,7 @@
             <!-- Icon Code -->
             <i class="fa-brands fa-js"></i>
             <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-js-square"></i>
+            <i class="fa-brands fa-java"></i>
             <i class="fa-brands fa-android"></i>
             
             <div class="button-card">
