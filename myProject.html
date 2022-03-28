@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>ADD Project Page</title>
+
+    <script src="project.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -11,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body style="background-color: gainsboro;">
+  <body style="background-color: gainsboro">
     <nav>
       <div class="nav-left">
         <img src="assets/logo.png" style="width: 40px" alt="logo" />
@@ -31,33 +33,29 @@
       </div>
     </nav>
 
+    <!-- Form Input New Project -->
     <form class="form-input" onsubmit="addProject(event)">
       <div>
         <h2 style="text-align: center">ADD MY PROJECT</h2>
-
-        <label style="font-weight: bold; font-size: 20px" for="input-tittle">Tittle</label
+        <label style="font-weight: bold; font-size: 20px" for="input-tittle"
+          >Tittle</label
         >
-        <input type="text" id="input-tittle"/>
+        <input type="text" id="input-tittle" />
       </div>
 
       <div class="myProject" style="display: flex; gap: 50px">
         <div style="margin-top: 15px">
           <label for="input-email" style="font-weight: bold; font-size: 20px"
-            >Start Date</label>
-          <input
-            type="date"
-            id="input-startDate"
-          />
+            >Start Date
+          </label>
+          <input type="date" id="input-startDate" />
         </div>
 
         <div style="margin-top: 15px">
           <label for="input-endDate" style="font-weight: bold; font-size: 20px"
             >End Date</label
           >
-          <input
-            type="date"
-            id="input-endDate"
-          />
+          <input type="date" id="input-endDate" />
         </div>
       </div>
 
@@ -65,15 +63,13 @@
         <label for="input-desc" style="font-weight: bold; font-size: 20px"
           >Description</label
         >
-        <textarea
-          id="input-desc"
-        >
-        </textarea>
+        <textarea id="input-desc"> </textarea>
       </div>
 
       <div class="myProject">
         <label for="input-message" style="font-weight: bold; font-size: 20px"
-          >Technologies</label>
+          >Technologies</label
+        >
         <br />
 
         <div class="input-skill">
@@ -83,15 +79,15 @@
             <label>Java Script</label> <br />
 
             <input type="checkbox" id="    " />
-            <label >JAVA</label><br />
+            <label>JAVA</label><br />
           </div>
 
           <!-- div right -->
-          <div style="width: 100%;">
+          <div style="width: 100%">
             <input type="checkbox" id="    " />
-            <label > HTML 5 </label><br />
+            <label> HTML 5 </label><br />
             <input type="checkbox" id="    " />
-            <label > Android</label>
+            <label> Android</label>
           </div>
         </div>
       </div>
@@ -101,31 +97,32 @@
           >Upload image</label
         >
         <div class="input-file">
-          <label for="image">
+          <label for="input-image">
             <p>CHOOSE</p>
             <i class="fa-solid fa-paperclip"></i>
           </label>
-          <input type="file" id="image" hidden />
+          <input type="file" id="input-image" hidden />
         </div>
       </div>
-
-      <button>       
-        Submit
-      </button>
+      <button>Submit</button>
     </form>
+    <!-- End Of New Project Input -->
 
     <!-- Project View Card -->
     <div class="project-section" id="contents">
       <h1 style="text-align: center">My Project</h1>
-      <div class="project-view">
+      <div class="project-view" id="project-view">
         <div class="project-card">
           <!-- Untuk Image Tittle durasi  -->
           <img src="assets/hotNews.jpg" id="image-card" />
-          <a href="viewProject.html" style="text-decoration: none; color: black;">
+          <a
+            href="viewProject.html"
+            style="text-decoration: none; color: black"
+          >
             <h3 id="tittle-card">Dumways Bootcamp Activity</h3>
           </a>
           <p class="durasi" id="durasi-card">Durasi 3 Bulan</p>
-          
+
           <!-- Untuk Desc -->
           <p id="desc-card">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quod
@@ -139,100 +136,12 @@
           <i class="fa-brands fa-html5"></i>
           <i class="fa-brands fa-java"></i>
           <i class="fa-brands fa-android"></i>
-          
+
           <div class="button-card">
-              <button>Edit</button>
-              <button>Delete</button>
-          </div>      
+            <button>Edit</button>
+            <button>Delete</button>
+          </div>
         </div>
-
-        <div class="project-card">
-            <!-- Untuk Image Tittle durasi  -->
-            <img src="assets/hotNews.jpg" id="image-card" />
-            <h3 id="tittle-card">Dumbways Bootcamp Activity</h3>
-            <p class="durasi" id="durasi-card">Durasi 3 Bulan</p>
-            
-            <!-- Untuk Desc -->
-            <p id="desc-card">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quod
-              repellendus exercitationem quis, ipsa molestias blanditiis eaque
-              odio pariatur perferendis, recusandae quidem deleniti aliquid iste
-              velit, veniam atque. Illum, facilis.
-            </p>
-  
-            <!-- Icon Code -->
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-java"></i>
-            <i class="fa-brands fa-android"></i>
-            
-            <div class="button-card">
-                <button>Edit</button>
-                <button>Delete</button>
-            </div>
-           
-          
-          
-          </div>
-
-          <div class="project-card">
-            <!-- Untuk Image Tittle durasi  -->
-            <img src="assets/hotNews.jpg" id="image-card" />
-            <h3 id="tittle-card">Dumbways Bootcamp Activity</h3>
-            <p class="durasi" id="durasi-card">Durasi 3 Bulan</p>
-            
-            <!-- Untuk Desc -->
-            <p id="desc-card">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quod
-              repellendus exercitationem quis, ipsa molestias blanditiis eaque
-              odio pariatur perferendis, recusandae quidem deleniti aliquid iste
-              velit, veniam atque. Illum, facilis.
-            </p>
-  
-            <!-- Icon Code -->
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-java"></i>
-            <i class="fa-brands fa-android"></i>
-            
-            <div class="button-card">
-                <button>Edit</button>
-                <button>Delete</button>
-            </div>
-           
-          
-          
-          </div>
-
-          <div class="project-card">
-            <!-- Untuk Image Tittle durasi  -->
-            <img src="assets/hotNews.jpg" id="image-card" />
-            <h3 id="tittle-card">Dumbways Bootcamp Activity</h3>
-            <p class="durasi" id="durasi-card">Durasi 3 Bulan</p>
-            
-            <!-- Untuk Desc -->
-            <p id="desc-card">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut quod
-              repellendus exercitationem quis, ipsa molestias blanditiis eaque
-              odio pariatur perferendis, recusandae quidem deleniti aliquid iste
-              velit, veniam atque. Illum, facilis.
-            </p>
-  
-            <!-- Icon Code -->
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-java"></i>
-            <i class="fa-brands fa-android"></i>
-            
-            <div class="button-card">
-                <button>Edit</button>
-                <button>Delete</button>
-            </div>
-           
-          
-          
-          </div>
-
       </div>
     </div>
   </body>
